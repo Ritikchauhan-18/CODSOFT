@@ -35,6 +35,8 @@ root = tk.Tk()
 root.title("Calculator")
 root.geometry("500x450")
 
+root.configure(bg="lightblue")
+
 style = ttk.Style()
 style.configure("TButton", font=("Helvetica", 12))
 style.configure("TLabel", font=("Helvetica", 14))
