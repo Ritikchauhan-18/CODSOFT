@@ -61,6 +61,8 @@ def animate_computer_choice(choice):
 root = tk.Tk()
 root.title("Rock-Paper-Scissors Game")
 
+root.configure(bg="lightblue")
+
 # User's choice buttons
 user_choice_frame = tk.Frame(root)
 user_choice_frame.pack(side=tk.LEFT, padx=10)
@@ -73,7 +75,7 @@ for choice in user_choices:
 
 
 # Create a label widget to display the text
-text_label = tk.Label(root, text="Rock-Paper-Scissors\nGame\n\n", font=("Helvetica",56))
+text_label = tk.Label(root, text="Rock-Paper-Scissors\nGame", font=("Helvetica",56))
 
 # Use the pack geometry manager to center the label at the top
 text_label.pack(side="top", pady=10)
